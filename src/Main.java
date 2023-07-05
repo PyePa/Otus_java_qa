@@ -75,7 +75,7 @@ public class Main {
         System.out.println("Введите цвет животного");
         animal.setColor(scanner.next());
 
-        Integer age = 0;
+        Integer age = 1;
         do {
             System.out.println("Введите возраст животного");
             age = AgeTools.convertStrToInt(scanner.next());
@@ -87,10 +87,10 @@ public class Main {
         } while(true);
         animal.setAge(age);
 
-        Integer weight = 0;
+        Integer weight = 1;
         do {
             System.out.println("Введите вес животного");
-            weight = WeightTools.convertWeightToInt(scanner.next());
+            weight = WeightTools.convertWeightToStr(scanner.next());
 
             if (weight != null) {
                 break;

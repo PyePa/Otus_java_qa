@@ -1,10 +1,10 @@
 package tools;
 
 public class WeightTools {
-    public static Integer convertWeightToInt(String str) {
+    public static Integer convertWeightToStr(String str) {
         try {
             Integer weightInt = Integer.parseInt(str);
-            if (weightInt < 0) {
+            if (weightInt < 1) {
                 return null;
             }
             return weightInt;
@@ -13,3 +13,4 @@ public class WeightTools {
         }
     }
 }
+
